@@ -12,7 +12,7 @@ Opening a File
 File myFile = newFile("Filename.txt");
 ```
 
-Puttinng contence of a file in array list
+Putting contence of a file in array list
 ```Java
 Scanner myScanner = newScanner(myFile);
 while (myScanner.hasNextLine())
