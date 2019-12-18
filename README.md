@@ -29,6 +29,26 @@ while (myScanner.hasNextLine())
   myStringArray.add(myScanner.nextLine());
 }
 ```
+### Variables to Implement
+
+### Methods to Implement
+- Read file
+```Returns list of items```
+
+- Set Prices
+```Returns list of items```
+
+- Show Items
+```Returns list of items```
+
+- Return Change
+```Returns list of items```
+
+- Insert Money
+```Returns list of items```
+
+- Select Item
+```Returns list of items```
 
 ### User Reviews
 > I wouldn't put my money in it
