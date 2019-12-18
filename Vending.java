@@ -84,6 +84,12 @@ class Vending
     return(userIn.nextLine().equals("yes"));
   }
 
+  private void returnChange()
+  {
+    System.out.print("\033[H\033[2J");
+    System.out.println("Your change is " + (userMoney));
+  }
+
   private void selectItem(ArrayList<String> items, ArrayList<Double> prices, double max)
   {
     showItems(items, prices, max);
@@ -95,10 +101,17 @@ class Vending
       int index = items.indexOf(responce);
       userMoney -= prices.get(index);
       System.out.println("you have $" + userMoney + " left");
-      System.out.println("would you like to purchase more items");
-      Scanner userIn = new Scanner(System.in);
-      String userChoice = userIn.nextLine();
-      if ()
+      System.out.println("would you like to purchase more items(yes or no)");
+      Scanner purchaseIn = new Scanner(System.in);
+      String userChoice = purchaseIn.nextLine();
+      if(userChoice.equals("yes"))
+      {
+        selectItem(items, prices, max);
+      }
+      else
+      {
+        returnChange();
+      }
     }
     catch(Exception e)
     {
@@ -157,6 +170,7 @@ class Vending
     showItems(items, prices);
     if (confirmPrices())
     {
+      System.out.print("\033[H\033[2J");
       while(true != false)
       {
         userMoney = 0;
