@@ -2,7 +2,7 @@
 ## A vending machine for computer science 
 
 ### Things to Remember
-making array List
+Making array List
 ```Java
 ArrayList<String> myStringArray = new ArrayList<String()>;
 // This list can only contain Strings
