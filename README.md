@@ -30,25 +30,50 @@ while (myScanner.hasNextLine())
 }
 ```
 ### Variables to Implement
+ArrayList items
+```
+list of all the items
+```
+ArrayList prices
+```
+list of all the prices
+```
+double totalMoney
+```
+the total amount of money the user inputed
+```
+
 
 ### Methods to Implement
-- Read file
-```Returns list of items```
+Read file
+```
+Returns list of items
+```
 
-- Set Prices
-```Returns list of items```
+Set Prices
+```
+for each item in the list set a price
+```
 
-- Show Items
-```Returns list of items```
+Show Items
+```
+for each item in the list print item
+```
 
-- Return Change
-```Returns list of items```
+Return Change
+```
+print out how much money is left over
+```
 
-- Insert Money
-```Returns list of items```
+Insert Money
+```
+for each item in the items list ask the user for a price and add it to a second list
+```
 
-- Select Item
-```Returns list of items```
+Select Item
+```
+lets the user input what item they want and subracts its price from their total money
+```
 
 ### User Reviews
 > I wouldn't put my money in it
