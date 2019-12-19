@@ -18,7 +18,14 @@ ArrayList<Double> myDubArray = new ArrayList<Double()>;
 
 Opening a File
 ```Java
-File myFile = newFile("Filename.txt");
+try
+{
+  File myFile = newFile("Filename.txt");
+}
+catch(Exception e)
+{
+  System.out.println("File does not exist");
+}
 ```
 
 Putting contence of a file in array list
@@ -29,6 +36,8 @@ while (myScanner.hasNextLine())
   myStringArray.add(myScanner.nextLine());
 }
 ```
+**Make sure your vending machine doesn't allow the user to input negative amounts or spend more than they have**
+
 ### Variables to Implement
 ArrayList items
 ```
